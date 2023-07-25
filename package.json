@@ -8,7 +8,8 @@
     "cypress:runner": "cypress open --e2e --browser chrome",
     "cypress:execution": "cypress run --spec cypress/e2e/features/*",
     "cypress:execution-tags": "cypress run --env tags=@mobile",
-    "cypress": "./node_modules/.bin/cypress open --browser chrome --e2e"
+    "cypress": "./node_modules/.bin/cypress open --browser chrome --e2e",
+    "cypress:pom": "cypress run --spec cypress/e2e/POM-alternative/e2e/PageObjectModel/FreeRangePOM.cy.js"
   },
   "author": "German Larcher",
   "license": "ISC",
