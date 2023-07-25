@@ -4,8 +4,11 @@ const home = new FreeRangeHome
 
 describe('Ejemplo de POM en la web Free Range Testers', ()=>{
 
-    it('Prueba con POM - el BTN "Empezar a aprender" existe', ()=>{
+    beforeEach(()=>{
         home.navigateToHome()
+    })
+
+    it('Prueba con POM - el BTN "Empezar a aprender" existe', ()=>{
         home.empezarButton().should('exist')        
     })
 })
