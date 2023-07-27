@@ -1,1 +1,4 @@
 node_modules
+mochawesome-report
+cypress/screenshots
+cypress/videos
