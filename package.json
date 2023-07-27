@@ -6,6 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "cypress:runner": "cypress open --e2e --browser chrome",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run --browser chrome",
     "cypress:execution": "cypress run --spec cypress/e2e/features/*",
     "cypress:execution-tags": "cypress run --env tags=@mobile",
     "cypress": "./node_modules/.bin/cypress open --browser chrome --e2e",
@@ -15,9 +17,10 @@
   "license": "ISC",
   "devDependencies": {
     "cypress": "^12.16.0",
-    "cypress-cucumber-preprocessor": "^4.3.1"
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "mochawesome": "^7.1.3"
   },
-  "cypress-cucumber-preprocessor":{
+  "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": true,
     "stepDefinitions": "cypress/e2e"
   }
