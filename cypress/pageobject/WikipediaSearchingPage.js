@@ -13,8 +13,6 @@ class WikipediaSearchingPage{
         cy.log(`>>>>>>>>>>>>>>>>>> imprime: ${extractedText} <<<<<<<<<<<<<<<<<<<<<<`)
         return extractedText
     }
-
-
 }
 
 module.exports = new WikipediaSearchingPage();

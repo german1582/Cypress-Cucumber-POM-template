@@ -20,7 +20,6 @@ class WikipediaPage{
         // Otra alternativa en una línea:
         //this.elements.inputTxtSearch().type(searching).type('{enter}')
     }
-
 }
 
 module.exports = new WikipediaPage();
